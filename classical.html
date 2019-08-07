@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rock</title>
+<style>
+#p1,#p2,#p3{
+margin:left:1000px;
+size:50px;
+float:right;
+font-size:40px;
+margin-right:600px;
+font-weight:bold;
+text-shadow:3px 3px red;
+}
+
+#lyrics1{
+padding:50px;
+margin-top:-290px;
+margin-left:700px;
+width:800px;
+height:1300px;
+background-color:gray;
+display:none;
+transition:1s;
+}
+#lyrics2{
+padding:50px;
+margin-top:-290px;
+margin-left:700px;
+width:800px;
+height:1300px;
+background-color:gray;
+display:none;
+transition:1s;
+}
+#lyrics3{
+padding:50px;
+margin-top:-290px;
+margin-left:700px;
+width:800px;
+height:1300px;
+background-color:gray;
+display:none;
+transition:1s;
+}
+
+
+#title{
+position:relative;
+margin-top:5px;
+}
+img{
+margin-top:10px;
+margin-left:20px;
+}
+
+p{
+
+margin-left:79px;
+
+font-family:Agency FB;
+size:10px;
+}
+body{
+background-image:url('music.jpeg');
+background-repeat: no-repeat;
+text-align:justify;
+}
+body{
+margin-left:40px;
+background-image:url('music.jpeg');
+}
+.song1{
+border:1px solid black;
+height: 70px;
+width:300px;
+background-color:#a3a3a3;
+border-radius:50px;
+border:2px solid #505050;
+
+}
+.song2{
+height: 70px;
+width:300px;
+background-color:#a3a3a3;
+border-radius:50px;
+border:2px solid #505050;
+
+
+}
+.song3{
+height: 70px;
+width:300px;
+background-color:#a3a3a3;
+border-radius:50px;
+border:2px solid #505050;
+
+}
+
+</style>
+<script> 
+
+
+
+function pauseSong1(){
+aud2.pause();
+aud3.pause();
+}
+function pauseSong2(){
+aud1.pause();
+aud3.pause();
+}
+
+function hide1(){
+ document.getElementById("lyrics2").style.display = "none";
+    document.getElementById("lyrics3").style.display = "none";
+}
+
+function hide2(){
+document.getElementById("lyrics1").style.display = "none";
+    document.getElementById("lyrics3").style.display = "none";
+}
+function hide3(){
+document.getElementById("lyrics1").style.display = "none";
+    document.getElementById("lyrics2").style.display = "none";
+}
+function play1() {
+var x = document.getElementById("song1"); 
+var y = document.getElementById("song2"); 
+var z = document.getElementById("song3"); 
+z.pause(); 
+  x.play(); 
+  y.pause();
+	document.getElementById("lyrics1").style.display = "block";
+   
+}
+
+function play2() {
+var y = document.getElementById("song2"); 
+var x = document.getElementById("song1"); 
+var z=document.getElementById("song3");
+x.pause();
+  y.play(); 
+  z.pause();
+	document.getElementById("lyrics1").style.display = "none";
+    document.getElementById("lyrics2").style.display = "block";
+    document.getElementById("lyrics3").style.display = "none";
+}
+
+
+function play3() {
+var y = document.getElementById("song2"); 
+var x = document.getElementById("song1"); 
+var z=document.getElementById("song3");
+y.pause();
+x.pause();
+  z.play(); 
+	document.getElementById("lyrics1").style.display = "none";
+    document.getElementById("lyrics2").style.display = "none";
+    document.getElementById("lyrics3").style.display = "block";
+}
+
+
+
+
+
+
+</script> 
+</head>
+<body>
+
+<div class="song1">
+<img src="crystal.jpg" height="40px" width="40px" style="float:left;"><p id="title">Crystallize - Lindsey Stirling <br> <button type="button" onclick="play1();"><img src="download.png" height="20px" width="20px" style="margin-left:1px;"></button>
+<audio id="song1" width="320" height="176" onclick="play1();">
+  <source src="Crystallize - Lindsey Stirling (Dubstep Violin Original Song).mp3">
+  
+</audio>
+
+</div>
+<br><br>
+<div class="song2">
+<img src="elements.jpg" height="40px" width="40px" style="float:left;"><p id="title">Elements - Lindsey Stirling <br> <button type="button" onclick="play2();"><img src="download.png" height="20px" width="20px" style="margin-left:1px;"></button>
+<audio id="song2" width="320" height="176" onclick="play2();">
+  <source src="Elements - Lindsey Stirling (Dubstep Violin Original Song).mp3">
+
+  
+  
+</audio>
+
+
+</div>
+<br><br>
+<div class="song3">
+<img src="star.jpg" height="40px" width="40px" style="float:left;"><p id="title">Two Steps From Hell - Star Sky<br> <button type="button" onclick="play3();"><img src="download.png" height="20px" width="20px" style="margin-left:1px;"></button>
+<audio id="song3" width="320" height="176" onclick="play3();">
+  <source src="Two Steps From Hell - Star Sky CINEMATIC.mp3">
+
+  
+  
+</audio>
+</div>
+<p id="p1" > NO LYRICS JUST LOVELY INSTRUMENTALS =) <br><br><br>
+
+
+</body>
+</html>

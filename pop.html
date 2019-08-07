@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rock</title>
+<style>
+
+#lyrics1{
+padding:50px;
+margin-top:-290px;
+margin-left:700px;
+width:800px;
+height:1300px;
+background-color:gray;
+display:none;
+transition:1s;
+}
+#lyrics2{
+padding:50px;
+margin-top:-290px;
+margin-left:700px;
+width:800px;
+height:1300px;
+background-color:gray;
+display:none;
+transition:1s;
+}
+#lyrics3{
+padding:50px;
+margin-top:-290px;
+margin-left:700px;
+width:800px;
+height:1300px;
+background-color:gray;
+display:none;
+transition:1s;
+}
+
+
+#title{
+position:relative;
+margin-top:5px;
+}
+img{
+margin-top:10px;
+margin-left:20px;
+}
+
+p{
+
+margin-left:79px;
+
+font-family:Agency FB;
+size:10px;
+}
+body{
+background-image:url('music.jpeg');
+background-repeat: no-repeat;
+text-align:justify;
+}
+body{
+margin-left:40px;
+background-image:url('music.jpeg');
+}
+.song1{
+border:1px solid black;
+height: 70px;
+width:300px;
+background-color:#a3a3a3;
+border-radius:50px;
+border:2px solid #505050;
+
+}
+.song2{
+height: 70px;
+width:300px;
+background-color:#a3a3a3;
+border-radius:50px;
+border:2px solid #505050;
+
+
+}
+.song3{
+height: 70px;
+width:300px;
+background-color:#a3a3a3;
+border-radius:50px;
+border:2px solid #505050;
+
+}
+
+</style>
+<script> 
+
+
+
+function pauseSong1(){
+aud2.pause();
+aud3.pause();
+}
+function pauseSong2(){
+aud1.pause();
+aud3.pause();
+}
+
+function hide1(){
+ document.getElementById("lyrics2").style.display = "none";
+    document.getElementById("lyrics3").style.display = "none";
+}
+
+function hide2(){
+document.getElementById("lyrics1").style.display = "none";
+    document.getElementById("lyrics3").style.display = "none";
+}
+function hide3(){
+document.getElementById("lyrics1").style.display = "none";
+    document.getElementById("lyrics2").style.display = "none";
+}
+function play1() {
+var x = document.getElementById("song1"); 
+var y = document.getElementById("song2"); 
+var z = document.getElementById("song3"); 
+z.pause(); 
+  x.play(); 
+  y.pause();
+	document.getElementById("lyrics1").style.display = "block";
+   document.getElementById("lyrics3").style.display = "none";
+   document.getElementById("lyrics2").style.display = "none";
+}
+
+function play2() {
+var y = document.getElementById("song2"); 
+var x = document.getElementById("song1"); 
+var z=document.getElementById("song3");
+x.pause();
+  y.play(); 
+  z.pause();
+	document.getElementById("lyrics1").style.display = "none";
+    document.getElementById("lyrics2").style.display = "block";
+    document.getElementById("lyrics3").style.display = "none";
+}
+
+
+function play3() {
+var y = document.getElementById("song2"); 
+var x = document.getElementById("song1"); 
+var z=document.getElementById("song3");
+y.pause();
+x.pause();
+  z.play(); 
+	document.getElementById("lyrics1").style.display = "none";
+    document.getElementById("lyrics2").style.display = "none";
+    document.getElementById("lyrics3").style.display = "block";
+}
+
+
+
+
+
+
+</script> 
+</head>
+<body>
+
+<div class="song1">
+<img src="attention.jpg" height="40px" width="40px" style="float:left;"><p id="title">Charlie Puth - Attention<br> <button type="button" onclick="play1();"><img src="download.png" height="20px" width="20px" style="margin-left:1px;"></button>
+<audio id="song1" width="320" height="176" onclick="play1();">
+  <source src="Charlie Puth - Attention (Lyrics).mp3">
+  
+</audio>
+
+</div>
+<br><br>
+<div class="song2">
+<img src="ed.jpg" height="40px" width="40px" style="float:left;"><p id="title">Ed Sheeran - How Would You Feel<br> <button type="button" onclick="play2();"><img src="download.png" height="20px" width="20px" style="margin-left:1px;"></button>
+<audio id="song2" width="320" height="176" onclick="play2();">
+  <source src="Ed Sheeran - How Would You Feel (Paean) [Official Audio].mp3">
+
+  
+  
+</audio>
+
+
+</div>
+<br><br>
+<div class="song3">
+<img src="shallow.jpg" height="40px" width="40px" style="float:left;"><p id="title">Shallow-A Star is Born<br> <button type="button" onclick="play3();"><img src="download.png" height="20px" width="20px" style="margin-left:1px;"></button>
+<audio id="song3" width="320" height="176" onclick="play3();">
+  <source src="Shallow-A Star is Born.mp3">
+
+  
+  
+</audio>
+<div>
+
+
+<div id="lyrics1">
+<p id="lyrics">
+"Attention" <br>
+<br><br>
+Whoa oh oh hm<br>
+<br><br>
+You've been runnin' 'round, runnin' 'round, runnin' 'round throwin' that dirt all on my name<br>
+'Cause you knew that I, knew that I, knew that I'd call you up<br>
+You've been going 'round, going 'round, going 'round every party in LA<br>
+'Cause you knew that I, knew that I, knew that I'd be at one, oh<br>
+<br><br>
+I know that dress is karma, perfume regret<br>
+You got me thinking 'bout when you were mine, oh<br>
+And now I'm all up on ya, what you expect?<br>
+But you're not coming home with me tonight<br>
+<br><br>
+You just want attention<br>
+You don't want my heart<br>
+Maybe you just hate the thought of me with someone new<br>
+Yeah, you just want attention<br>
+I knew from the start<br>
+You're just making sure I'm never gettin' over you, oh<br>
+<br><br>
+You've been runnin' round, runnin' round, runnin' round throwing that dirt all on my name<br>
+'Cause you knew that I, knew that I, knew that I'd call you up<br>
+Baby, now that we're, now that we're, now that we're right here standing face to face<br>
+You already know, 'ready know, 'ready know that you won, oh<br>
+<br><br>
+I know that dress is karma (dress is karma), perfume regret, yeah<br>
+You got me thinking 'bout when you were mine, oh<br>
+(You got me thinking 'bout when you were mine)<br>
+And now I'm all up on ya (all up on ya), what you expect?<br>
+(Oh, baby)<br>
+But you're not coming home with me tonight, oh no<br>
+<br><br>
+You just want attention<br>
+You don't want my heart<br>
+Maybe you just hate the thought of me with someone new, someone new<br>
+Yeah, you just want attention, oh<br>
+I knew from the start, the start<br>
+You're just making sure I'm never gettin' over you, over you, oh<br>
+<br><br>
+What are you doin' to me?<br>
+What are you doin', huh? (What are you doin'?)<br>
+What are you doin' to me?<br>
+What are you doin', huh? (What are you doin'?)<br>
+What are you doin' to me?<br>
+What are you doin', huh? (What are you doin'?)<br>
+What are you doin' to me?<br>
+What are you doin', huh?<br>
+<br><br>
+I know that dress is karma, perfume regret<br>
+You got me thinking 'bout when you were mine<br>
+And now I'm all up on ya, what you expect?<br>
+But you're not coming home with me tonight<br>
+<br><br>
+You just want attention<br>
+You don't want my heart<br>
+Maybe you just hate the thought of me with someone new<br>
+Yeah, you just want attention<br>
+I knew from the start<br>
+You're just making sure I'm never gettin' over you, over you<br>
+<br><br>
+What are you doin' to me? (hey)<br>
+What are you doin', huh? (what are you doin', what?)<br>
+What are you doin' to me?<br>
+What are you doin', huh? (yeah, you just want attention)<br>
+What are you doin' to me? (I knew from the start)<br>
+What are you doin', huh?<br>
+(You're just making sure I'm never gettin' over you)<br>
+What are you doin' to me?<br>
+What are you doin', huh?<br>
+
+</div>
+
+
+<div id="lyrics2">
+<p>
+"How Would You Feel (Paean)"<br>
+<br><br>
+You are the one girl<br>
+And you know that it's true<br>
+I'm feeling younger<br>
+Every time that I'm alone with you<br>
+<br><br>
+We were sitting in a parked car<br>
+Stealing kisses in the front yard<br>
+We got questions we should not ask but<br>
+<br><br>
+How would you feel, if I told you I loved you?<br>
+It's just something that I want to do<br>
+I'll be taking my time, spending my life<br>
+Falling deeper in love with you<br>
+So tell me that you love me too<br>
+<br><br>
+In the summer, as the lilacs bloom<br>
+Love flows deeper than the river<br>
+Every moment that I spend with you<br>
+We were sat upon our best friend's roof<br>
+I had both of my arms round you<br>
+Watching the sunrise replace the moon<br>
+<br><br>
+How would you feel, if I told you I loved you?<br>
+It's just something that I want to do<br>
+I'll be taking my time, spending my life<br>
+Falling deeper in love with you<br>
+So tell me that you love me too<br>
+<br><br>
+We were sitting in a parked car<br>
+Stealing kisses in the front yard<br>
+We got questions we should not ask but<br>
+<br>
+How would you feel, if I told you I loved you?<br>
+It's just something that I want to do<br>
+I'll be taking my time, spending my life<br>
+Falling deeper in love with you<br>
+So tell me that you love me too<br>
+Tell me that you love me too<br>
+Tell me that you love me too<br>
+</div>
+<div id="lyrics3">
+<p id="lyrics">
+"A Star Is Born Medley: Shallow / Always Remember Us This Way"<br>
+<br><br>
+Tell me somethin' girl<br>
+Are you happy in this modern world?<br>
+Or do you need more?<br>
+Is there somethin' else you're searchin' for?<br>
+I'm falling<br>
+<br><br>
+That Arizona sky burning in your eyes<br>
+You look at me and, babe, I wanna catch on fire<br>
+It's buried in my soul like California gold<br>
+You found the light in me that I couldn't find<br>
+<br><br>
+So when I'm all choked up<br>
+And I can't find the words<br>
+Every time we say goodbye<br>
+Baby, it hurts<br>
+<br><br>
+And I'm off the deep end, watch as I dive in<br>
+And I'll never meet the ground<br>
+Crash through the surface, where they can't hurt us<br>
+We're far from the shallow now<br>
+<br>
+When the sun goes down<br>
+And the band won't play<br>
+I'll always remember us this way<br>
+<br><br>
+In the sha-ha-sha-ha-low<br>
+In the sha-ha-sha-la-la-la-low<br>
+In the sha-ha-sha-ha-low<br>
+We're far from the shallow now<br>
+<br><br>
+When you look at me<br>
+And the whole world fades<br>
+I'll always remember us this way<br>
+<br><br>
+We're far from the shallow now<br>
+
+</div>
+<div id="cont"></div>
+
+
+</body>
+</html>
